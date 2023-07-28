@@ -15,3 +15,7 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 from models.mechanic import Mechanic
 from models.car import Car
+
+@app.route("/")
+def home():
+	return "This is the home page!"

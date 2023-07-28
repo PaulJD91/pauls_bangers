@@ -7,6 +7,6 @@ class Car(db.Model):
     model = db.Column(db.String(64))
     year = db.Column(db.Integer)
     owner_name = db.Column(db.String(64))
-    owner_number = db.Column(db.Integer)
+    owner_number = db.Column(db.String(64))
     mechanic_id = db.Column(db.Integer, db.ForeignKey("Mechanic.id"))
     
