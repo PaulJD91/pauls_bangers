@@ -1,6 +1,10 @@
 {% extends 'base.jinja' %}
 {% block content %}
     <h1>Show car</h1>
-{{car.manufacturer}} {{car.model}} {{car.year}} {{car.owner_name}} {{mechanic.name}}
+<p><b>Manufacturer:</b> {{car.manufacturer}} 
+    <b>Model:</b> {{car.model}} 
+    <b>Year:</b> {{car.year}} 
+    <b>Owner</b> {{car.owner_name}} 
+    <b>Mechanic Assigned:</b> {{mechanic.name}}</p>
 
 {% endblock content %}
