@@ -48,6 +48,30 @@ def delete_booking(id):
     db.session.commit()
     return redirect("/cars")
 
+@cars_blueprint.route("/cars/<id>/edit", methods=['GET'])
+def get_edit_page(id):
+    car = Car.query.get(id)
+    return render_template("cars/edit.jinja", car=car)
+     
+    # def edit_booking(id):
+    #     manufacturer = request.form['manufacturer']
+    #     model = request.form['model']
+    #     year = request.form['year']
+    #     owner_name = request.form['owner_name']
+    #     owner_number = request.form['owner_number']
+
+    # car = Car(manufacturer=manufacturer, model=model, year=year, owner_name=owner_name, owner_number=owner_number)
+
+    # car = Car.query.get(id)
+    # car.manufacturer = manufacturer
+    # car.model = model
+    # car.year = year
+    # car.owner_name = owner_name
+    # car.owner_number = owner_number
+
+    # db.session.commit()  
+    # return redirect("/cars")
+    
      
 
 
