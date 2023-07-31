@@ -7,4 +7,8 @@
     <b>Owner</b> {{car.owner_name}} 
     <b>Mechanic Assigned:</b> {{mechanic.name}}</p>
 
+    <form action="/cars/{{car.id}}/delete" method="post">
+    <button>Delete Entry</button>
+    </form>
+
 {% endblock content %}

@@ -40,6 +40,16 @@ def create_booking():
     db.session.commit()
     return redirect("/cars")
 
+@cars_blueprint.route("/cars/<id>/delete", methods=["POST"])
+def delete_booking(id):
+    car = Car.query.get(id)
+    db.session.delete(car)
+
+    db.session.commit()
+    return redirect("/cars")
+
+     
+
 
 
 	
