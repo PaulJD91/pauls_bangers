@@ -1,4 +1,4 @@
-from flask import Flask, Blueprint
+from flask import Flask, Blueprint, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -16,6 +16,10 @@ migrate = Migrate(app, db)
 from models.mechanic import Mechanic
 from models.car import Car
 
+from controllers.car_controller import cars_blueprint
+app.register_blueprint(cars_blueprint)
+
 @app.route("/")
 def home():
-	return "This is the home page!"
+	return render_template("index.jinja")
+

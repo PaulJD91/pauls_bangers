@@ -1,0 +1,60 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+<h1>Book in your car</h1>
+
+<form action="/cars" method="post">
+  <div>
+        <label for="manufacturer">Manufacturer:</label>
+        <input 
+            type="text"
+            name="manufacturer"
+            id="manufacturer"
+            required                
+            autofocus
+            >
+    </div>
+    <div>
+        <label for="model">Model:</label>
+        <input 
+            type="text"
+            name="model"
+            id="model"
+            required                
+            autofocus
+            >
+    </div>
+    <div>
+        <label for="year">Year:</label>
+        <input 
+            type="text"
+            name="year"
+            id="year"
+            required                
+            autofocus
+            >
+    </div>
+    <div>
+        <label for="owner_name">Owner:</label>
+        <input 
+            type="text"
+            name="owner_name"
+            id="owner_name"
+            required                
+            autofocus
+            >
+    </div>
+    <div>
+        <label for="owner_number">Your Number:</label>
+        <input 
+            type="text"
+            name="owner_number"
+            id="owner_number"
+            required                
+            autofocus
+            >
+        <button type="submit">Submit Booking</button>
+    </div>
+</form>
+
+{% endblock %}
