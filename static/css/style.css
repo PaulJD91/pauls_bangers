@@ -1,0 +1,17 @@
+body {
+    background: url('/static/images/pauls_bangers_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+form {
+    color: yellow;
+}
+
+p {
+    color: yellow;
+}
+
+a {
+    color: aliceblue;
+}
