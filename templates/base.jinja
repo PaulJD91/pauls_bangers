@@ -15,11 +15,19 @@
     />
   </head>
   <body>
-  <a href="/cars/new">Add Booking</a>
-  <a href="/cars">View Cars </a>
-
-  {% block content %}
+  <header>
+    <a href="/">Home</a>
+    <a href="/cars/new">Add Booking</a>
+    <a href="/cars">View Cars </a>
+  </header>
+  <main>
+    {% block content %}
     
-  {% endblock content %}
+    {% endblock content %}
+  </main>
+  <footer>
+    <img class="logos" src="/static/images/mot_logo.jpg" alt="MOT Logo">
+    <img class="logos" src="/static/images/rac_approved.jpg" alt="RAC Approved">
+  </footer>
   </body>
 </html>

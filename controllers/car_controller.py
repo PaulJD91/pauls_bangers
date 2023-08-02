@@ -8,8 +8,8 @@ cars_blueprint = Blueprint("cars", __name__)
 @cars_blueprint.route("/cars")
 def cars():
 	cars = Car.query.all()
-	return render_template("index.jinja",
-			all_cars = cars)
+	return render_template("cars/list.jinja",
+			cars = cars)
 
 @cars_blueprint.route("/cars/<id>")
 def show_car(id):

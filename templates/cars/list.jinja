@@ -1,0 +1,13 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+    <h1 class="needs_colour">Cars booked in</h1>
+
+    {% for car in cars %}
+        <ul class="needs_colour">
+            <li>{{ car.manufacturer }}</li>
+            <li><a href="/cars/{{car.id}}">{{car.model}}</a></li>
+        </ul>
+    {% endfor %}
+    
+{% endblock content %}

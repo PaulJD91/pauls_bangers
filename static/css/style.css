@@ -1,7 +1,10 @@
 body {
     background: url('/static/images/pauls_bangers_background.jpg');
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 form {
@@ -18,4 +21,20 @@ a {
 
 .needs_colour {
     color: yellow;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    justify-content: end;
+    display: flex;
+}
+
+.logos {
+    width: 200px;
+    height: 150px;
+    padding: 12px;
+
 }

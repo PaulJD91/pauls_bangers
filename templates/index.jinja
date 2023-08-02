@@ -2,17 +2,15 @@
 {% block content %}
     <h1 class="needs_colour">Pauls Bangers</h1>
 
-    {% for car in all_cars %}
-    
-    <p>{{ car.manufacturer }}</p>
-    <p> 
-        <a href="/cars/{{car.id}}">{{ car.model }}</a>
-    </p>
-    <p>{{ car.mechannic_id }}</p>
+    <p><b>MOT:</b> £40</p>
+    <p><b>Oil + Filter Lube:</b> from £80</p>
+    <p><b>Interim Service:</b> from £130</p>
+    <p><b>Full Service:</b> from £170</p>
+    <p>Same day tyre change</p>
+    <p>Discount for emergency services</p>
 
     
     
 
-    <hr />
-{% endfor %}
-{% endblock content %}
+    
+{% endblock %}

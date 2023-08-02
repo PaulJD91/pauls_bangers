@@ -1,12 +1,14 @@
 {% extends 'base.jinja' %}
 {% block content %}
-    <h1>Cars booked in</h1>
-<p><b>Manufacturer:</b> {{car.manufacturer}} 
+
+    <h1 class="needs_colour">Car Details</h1>
+    <p><b>Manufacturer:</b> {{car.manufacturer}} 
     <b>Model:</b> {{car.model}} 
     <b>Year:</b> {{car.year}} 
     <b>Owner</b> {{car.owner_name}} 
     <b>Mechanic Assigned:</b> {{mechanic.name}}</p>
+    
 
-    <a href="/cars/{{car.id}}/edit" type="submit">Update Booking</a>
+    <a href="/cars/{{car.id}}/edit">Update Booking</a>
 
 {% endblock content %}
